@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netbeans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section class="contenedor section">
+        <h1>Formulario en Netbeans</h1>
+        <form name="formul" action="InsertarDatos.jsp" id="formularioInsercion" method="GET">
+            <div class="form__nom">
+                <label>Nombre:</label><br>
+                <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+            </div>
+            <div class="form__ape">
+                <label>Apellido</label><br>
+                <input type="text" placeholder="Apellido" id="apellido" name="apellido">
+            </div>
+            <div class="form__fec">
+                <label>Fecha nacimiento: </label><br>
+                <input type="date" id="fechanac" name="fechanac">
+            </div>
+            <div class="form__sex">
+                <label>Sexo:</label><br>
+                <input type="radio" value="Hombre" name="sexo" id="sex">
+                <label class="form__sex-ho">Hombre</label>
+                <input type="radio" value="Mujer" name="sexo" id="sex">
+                <label class="form__sex-mu">Mujer</label>
+                <input type="radio" value="No definido" name="sexo" id="sex">
+                <label class="form__sex-nd">No definido</label>
+            </div>
+            <div class="form__ema">
+                <label>Email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form__sem">
+                <label>Semestre:</label><br>
+                <select name="semestre" id="semestre">
+                    <option value="Primero" label="Primero"></option>
+                    <option value="Segundo" label="Segundo"></option>
+                    <option value="Tercero" label="Tercero"></option>
+                    <option value="Cuarto" label="Cuarto"></option>
+                    <option value="Quinto" label="Quinto"></option>
+                    <option value="Sexto" label="Sexto"></option>
+                    <option value="Septimo" label="Septimo"></option>
+                    <option value="Octavo" label="Octavo"></option>
+                    <option value="Noveno" label="Noveno"></option>
+                    <option value="Decimo" label="Decimo"></option>
+                </select>
+            </div>
+            <div class="form__uni">
+                <label>Universidad:</label><br>
+                <input type="text" id="universidad" name="universidad">
+            </div>
+            <div class="form__car">
+                <label>Carrera:</label><br>
+                <input type="text" id="carrera" name="carrera">
+            </div>
+            <div class="form__sug">
+                <label>Sugerencias:</label><br>
+                <textarea name="texto" id="sugerencia" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form__sel">
+                <input type="checkbox" id="opcion1" name="opcion1" value="Acepto el manejo de mis datos">
+                <label>Acepto el manejo de mis datos.</label><br>
+                <input type="checkbox" id="opcion2" name="opcion2" value="Quiero recibir mensajes por el email">
+                <label>Quiero recibir mensajes por el email</label>
+            </div>
+            <div class="form__sub">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

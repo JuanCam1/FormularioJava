@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #fff;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    height: 1200px;
+}
+
+table{
+    border: 1px solid #000;
+     border-spacing: 0;
+     border-collapse: collapse;
+     
+}
+
+th{
+    background: #B9C9FE;
+    color: #008CBA;
+}
+
+td{
+    background: #E8EDFF;
+}
+
+th, td{
+    vertical-align: top;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+a input[type="submit"]{
+    color: #000; 
+    background: #fff;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+a input[type="submit"]:hover{
+    background-color: #008CBA;
+    color: white;
+}
